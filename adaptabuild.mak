@@ -101,28 +101,7 @@ SRC_ASM += src/rp2_common/boot_stage2/boot2_w25q080.S
 SYSTEM_BOOT_OBJ := $(BUILD_PATH)/$(MODULE_PATH)/src/rp2_common/boot_stage2/boot2_w25q080.o
 
 # ----------------------------------------------------------------------------
-# Set up the module level source and include paths
-
-$(MODULE)_SRCPATH :=
-# $(MODULE)_SRCPATH += $(MODULE_PATH)/drivers/src
-# $(MODULE)_SRCPATH += $(MODULE_PATH)/drivers/src/prs
-# $(MODULE)_SRCPATH += $(MODULE_PATH)/mdk
-$(MODULE)_SRCPATH += $(MODULE_PATH)/src/rp2_common/pico_runtime
-$(MODULE)_SRCPATH += $(MODULE_PATH)/src/rp2_common/pico_standard_link
-$(MODULE)_SRCPATH += $(MODULE_PATH)/src/common/pico_sync
-$(MODULE)_SRCPATH += $(MODULE_PATH)/src/common/pico_time
-$(MODULE)_SRCPATH += $(MODULE_PATH)/src/common/pico_util
-$(MODULE)_SRCPATH += $(MODULE_PATH)/src/rp2_common/hardware_claim
-$(MODULE)_SRCPATH += $(MODULE_PATH)/src/rp2_common/hardware_sync
-$(MODULE)_SRCPATH += $(MODULE_PATH)/src/rp2_common/hardware_clocks
-$(MODULE)_SRCPATH += $(MODULE_PATH)/src/rp2_common/hardware_gpio
-$(MODULE)_SRCPATH += $(MODULE_PATH)/src/rp2_common/hardware_timer
-$(MODULE)_SRCPATH += $(MODULE_PATH)/src/rp2_common/hardware_irq
-$(MODULE)_SRCPATH += $(MODULE_PATH)/src/rp2_common/hardware_pll
-$(MODULE)_SRCPATH += $(MODULE_PATH)/src/rp2_common/hardware_xosc
-$(MODULE)_SRCPATH += $(MODULE_PATH)/src/rp2_common/hardware_watchdog
-$(MODULE)_SRCPATH += $(MODULE_PATH)/src/rp2_common/pico_bootrom
-$(MODULE)_SRCPATH += $(MODULE_PATH)/src/rp2_common/boot_stage2/
+# Set up the module level include path
 
 $(MODULE)_INCPATH :=
 # $(MODULE)_INCPATH += $(MODULE_PATH)
